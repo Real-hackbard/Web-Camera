@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.843,D:\Incoming\[.WORK]\WebCam Capture\WebCamCapture.dproj=D:\Incoming\[.WORK]\WebCam Capture\WebCamera.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,D:\Incoming\[.WORK]\WebCam Capture\VSampleDemo_MainForm.pas=D:\Incoming\[.WORK]\WebCam Capture\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,D:\Incoming\[.WORK]\WebCam Capture\VSampleDemo_MainForm.dfm=D:\Incoming\[.WORK]\WebCam Capture\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.672,D:\Incoming\[.WORK]\WebCam Capture\VSampleDemo.dproj=D:\Incoming\[.WORK]\WebCam Capture\WebCamCapture.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
