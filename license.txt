@@ -1,0 +1,105 @@
+|##############################################################################|
+{*                                                                            *}
+{*  Copyright (C) Microsoft Corporation.  All Rights Reserved.                *}
+{*                                                                            *}
+{*  Files:      d3d9types.h d3d9caps.h d3d9.h                                 *}
+{*  Content:    Direct3D9 include files                                       *}
+{*                                                                            *}
+{*  DirectX 9.0 Delphi / FreePascal adaptation by Alexey Barkovoy             *}
+{*  E-Mail: directx@clootie.ru                                                *}
+{*                                                                            *}
+{*  Latest version can be downloaded from:                                    *}
+{*    http://clootie.ru                                                       *}
+{*    http://sourceforge.net/projects/delphi-dx9sdk                           *}
+{*                                                                            *}
+|##############################################################################|
+{*  $Id: Direct3D9.pas,v 1.13 2006/10/22 22:00:33 clootie Exp $ }
+|##############################################################################|
+{                                                                              }
+{ Obtained through: Joint Endeavour of Delphi Innovators (Project JEDI)        }
+{                                                                              }
+{ The contents of this file are used with permission, subject to the Mozilla   }
+{ Public License Version 1.1 (the "License"); you may not use this file except }
+{ in compliance with the License. You may obtain a copy of the License at      }
+{ http://www.mozilla.org/MPL/MPL-1.1.html                                      }
+{                                                                              }
+{ Software distributed under the License is distributed on an "AS IS" basis,   }
+{ WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for }
+{ the specific language governing rights and limitations under the License.    }
+{                                                                              }
+{ Alternatively, the contents of this file may be used under the terms of the  }
+{ GNU Lesser General Public License (the  "LGPL License"), in which case the   }
+{ provisions of the LGPL License are applicable instead of those above.        }
+{ If you wish to allow use of your version of this file only under the terms   }
+{ of the LGPL License and not to allow others to use your version of this file }
+{ under the MPL, indicate your decision by deleting  the provisions above and  }
+{ replace  them with the notice and other provisions required by the LGPL      }
+{ License.  If you do not delete the provisions above, a recipient may use     }
+{ your version of this file under either the MPL or the LGPL License.          }
+{                                                                              }
+{ For more information about the LGPL: http://www.gnu.org/copyleft/lesser.html }
+{                                                                              }
+|##############################################################################|
+
+================================================================================
+
+      |##################################################################|
+      | Borland Delphi 4,5,6,7 API for Direct Show                       |
+      | DirectX 9.0 Win 98, Me, 2000, XP, 7, 8, 8.1, 10, 11              |
+      |                                                                  |
+      | Portions created by Microsoft are                                |
+      | Copyright (C) 1995-2002 Microsoft Corporation.                   |
+      | All Rights Reserved.                                             |
+      |                                                                  |
+      | The original files are:                                          |
+      |   comlite.h, errors.h, dv.h, strmif.h, mmstream.h, amstream.h,   |
+      |   ddstream.h, austream.h, mpconfig.h, control.h, qnetwork.h,     |
+      |   playlist.h, il21dec.h, amvideo.h, amaudio.h, vptype.h,         |
+      |   vpconfig.h, vpnotify.h, mpegtype.h, dvdevcod.h, dvdmedia.h,    |
+      |   bdatypes.h, activecf.h, vfwmsgs.h,(edevdefs.h, XPrtDefs.h),    |
+      |   aviriff.h, evcode.h, uuids.h, ksuuids.h, DXVA.h,AMVA.h,        |
+      |   videoacc.h, regbag.h, tuner.h, DXTrans.h, QEdit.h, mpeguids.h, |
+      |   dshowasf.h, amparse.h, audevcod.h, atsmedia.h, MediaErr,       |
+      |   MedParam.h, mediaobj.h, dmodshow.h, dmoreg.h, DMORt.h,         |
+      |   dmoimpl.h, ks.h, ksproxy.h, ksmedia.h, dmksctrl.h, bdamedia.h, |
+      |   BDATIF.idl, AMVPE.idl, Mixerocx.idl, Mpeg2Data.idl,            |
+      |   Mpeg2Structs.idl, Mpeg2Bits.h, Mpeg2Error.h, EDevCtrl.h,       |
+      |   sbe.idl, vmr9.idl, iwstdec.h                                   |
+      |                                                                  |
+      | The original Pascal code is: DirectShow9.pas,                    |
+      |   released 01 Nov 2003.                                          |
+      |                                                                  |
+      | The initial developer of the Pascal code is Henri GOURVEST       |
+      |   Email    : hgourvest@progdigy.com                              |
+      |   WebSite  : http://www.progdigy.com                             |
+      |                                                                  |
+      | Portions created by Henri GOURVEST are                           |
+      | Copyright (C) 2002 Henri GOURVEST.                               |
+      |                                                                  |
+      | Contributors: Ivo Steinmann                                      |
+      |               Peter NEUMANN                                      |
+      |               Alexey Barkovoy                                    |
+      |               Wayne Sherman                                      |
+      |               Peter J. Haas     <DSPack@pjh2.de>                 |
+      |               Andriy Nevhasymyy <a.n@email.com>                  |
+      |               Milenko Mitrovic  <dcoder@dsp-worx.de>             |
+      |               Michael Andersen  <michael@mechdata.dk>            |
+      |               Martin Offenwanger <coder@dsplayer.de              |
+      |                                                                  |
+      | Joint Endeavour of Delphi Innovators (Project JEDI)              |
+      |                                                                  |
+      | You may retrieve the latest version of this file here:           |
+      |   http://www.progdigy.com                                        |
+      |                                                                  |
+      | The contents of this file are used with permission, subject to   |
+      | the Mozilla Public License Version 1.1 (the "License"); you may  |
+      | not use this file except in compliance with the License. You may |
+      | obtain a copy of the License at                                  |
+      | http://www.mozilla.org/MPL/MPL-1.1.html                          |
+      |                                                                  |
+      | Software distributed under the License is distributed on an      |
+      | "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or   |
+      | implied. See the License for the specific language governing     |
+      | rights and limitations under the License.                        |
+      |                                                                  |
+      |******************************************************************|
